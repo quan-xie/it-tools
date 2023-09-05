@@ -51,7 +51,7 @@ const toolDescription = computed<string>(() => t(`tools.${i18nKey.value}.descrip
         </div>
       </div>
     </div>
-     <div align="center">
+     <div class="div-height" align="center">
       <Adsense
       style="display:inline-block;width:480px;height:60px"
      data-ad-client="ca-pub-4706145830093249"
@@ -64,6 +64,10 @@ const toolDescription = computed<string>(() => t(`tools.${i18nKey.value}.descrip
     </div>
   </BaseLayout>
 </template>
+
+<style> 
+.div-height{border:1px solid #F00; width:480px; height:60px} 
+</style> 
 
 <style lang="less" scoped>
 .tool-content {
