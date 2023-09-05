@@ -13,6 +13,9 @@ import App from './App.vue';
 import router from './router';
 import { i18nPlugin } from './plugins/i18n.plugin';
 
+import ScriptX from 'vue-scriptx'
+import Ads from 'vue-google-adsense'
+
 registerSW();
 
 const app = createApp(App);
@@ -23,5 +26,12 @@ app.use(i18nPlugin);
 app.use(router);
 app.use(naive);
 app.use(plausible);
+
+
+app.use(ScriptX)
+
+app.use(Ads.Adsense)
+app.use(Ads.InArticleAdsense)
+app.use(Ads.InFeedAdsense)
 
 app.mount('#app');
